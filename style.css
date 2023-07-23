@@ -26,7 +26,6 @@ body {
   justify-content: center;
   align-items: center;
   padding: 1em;
-  overflow: hidden;
 }
 
 img {
@@ -85,7 +84,6 @@ img.birthday {
 body {
   height: 100vh;
   background: #001219;
-  overflow: hidden;
 }
 
 .circle {
