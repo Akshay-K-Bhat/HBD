@@ -17,7 +17,6 @@ body {
 .card {
   background: #fdfdfd;
   border-radius: 4px;
-  height: 85vh;
   width: 80vw;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
   text-align: center;
@@ -26,6 +25,7 @@ body {
   justify-content: center;
   align-items: center;
   padding: 1em;
+ 
 }
 
 img {
@@ -54,7 +54,7 @@ img {
   }
 
   .text_wish {
-    font-size: 1.4rem;
+    font-size: 1.5rem;
   }
 }
 
@@ -82,7 +82,6 @@ img.birthday {
 }
 
 body {
-  height: 100vh;
   background: #001219;
 }
 
@@ -128,5 +127,5 @@ body {
     font-family: 'Dancing Script', cursive;
   padding: 10px;
   letter-spacing: 0.6px;
-  font-size: 1.6rem;
+  font-size: 1.4rem;
 } 
