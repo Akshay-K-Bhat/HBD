@@ -83,6 +83,7 @@ img.birthday {
 
 body {
   background: #001219;
+  overflow: hidden;
 }
 
 .circle {
