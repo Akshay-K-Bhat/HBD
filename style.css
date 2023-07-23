@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Poppins&display=swap');
+* {
+  transition: all 0.2s ease-in-out;
+}
+
+body {
+  background: #008888;
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+.card {
+  background: #fdfdfd;
+  border-radius: 4px;
+  height: 85vh;
+  width: 80vw;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1em;
+  overflow: hidden;
+}
+
+img {
+    height: 70%;
+}
+
+@media only screen and (min-width: 1000px) {
+  .card {
+    flex-direction: row-reverse;
+  }
+  .card img.birthday {
+    width: 100%;
+    max-width: 50vw;
+    max-height: unset;
+  }
+}
+
+@media only screen and (max-height: 640px) {
+  .card {
+    flex-direction: row-reverse;
+  }
+  .card img.birthday {
+    width: 100%;
+    max-width: 50vw;
+    max-height: unset;
+  }
+
+  .text_wish {
+    font-size: 1.5rem;
+  }
+}
+
+img.birthday {
+  max-height: 40vh;
+}
+
+.text {
+  padding: 1em;
+
+}
+
+.muted {
+  opacity: 0.8;
+}
+
+.space {
+  height: 100px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  background: #001219;
+  overflow: hidden;
+}
+
+.circle {
+  position: absolute;
+  bottom: 0;
+  width: 20px;
+  aspect-ratio: 1/1;
+  background: #fca311;
+  box-shadow: 0 0 10px #ff5400, 0 0 20px #ff5400, 0 0 30px #ff5400,
+    0 0 50px #ff5400;
+  border-radius: 50%;
+  animation: animate 5s linear forwards;
+}
+
+@keyframes animate {
+  0% {
+    transform: translatey(0);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    transform: translatey(-100vh);
+    opacity: 1;
+  }
+}
+
+.circle::before {
+  content: "";
+  position: absolute;
+  bottom: 100%;
+  left: 25%;
+  width: 50%;
+  height: 100vh;
+  opacity: 0.5s;
+  background: linear-gradient(#ff5400, transparent);
+}
+
+
+.text_wish {
+    font-family: 'Dancing Script', cursive;
+  padding: 10px;
+  letter-spacing: 0.6px;
+  font-size: 1.6rem;
+} 
